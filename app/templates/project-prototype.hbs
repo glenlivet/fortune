@@ -1,0 +1,69 @@
+
+<table>
+  <tr>
+    <td>Fortune Name: </td>
+    <td>{{model.name}} </td>
+  </tr>
+  <tr>
+    <td>Fortune Owner: </td>
+    <td>{{model.owner}} </td>
+  </tr>
+  <tr>
+    <td>Fortune Type: </td>
+    <td>{{model.type}} </td>
+  </tr>
+  <tr>
+    <td>Description: </td>
+    <td>{{model.description}} </td>
+  </tr>
+  <tr>
+    <td>Description: </td>
+    <td>{{model.description}} </td>
+  </tr>
+  <tr>
+    <td>Demo: </td>
+    <td><button id="demo-btn" type="button">Have a try!</button></td>
+  </tr>
+</table>
+
+<div id="demo-settings" title="Demo Settings">
+  <div class="ui-grid ui-grid-responsive">
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-6">
+        <span>Server Endpoint</span>
+      </div>
+      <div class="ui-grid-col-6">
+        {{input type="text" value=demoSettings.serverEndpoint}}
+      </div>
+    </div>
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-6">
+        <span>Server Key</span>
+      </div>
+      <div class="ui-grid-col-6">
+        {{textarea value=demoSettings.serverKey cols="90" rows="25"}}
+      </div>
+    </div>
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-6">
+        <span>Server OS</span>
+      </div>
+      <div class="ui-grid-col-6">
+        {{input type="text" value=demoSettings.serverOS}}
+      </div>
+    </div>
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-6">
+        <span>server User</span>
+      </div>
+      <div class="ui-grid-col-6">
+        {{input type="text" value=demoSettings.serverUser}}
+      </div>
+    </div>
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-12">
+        <button {{action "startDemo"}} class="btn btn-sm btn-primary">Deploy Demo!</button>
+      </div>
+    </div>
+  </div>
+</div>

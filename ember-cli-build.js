@@ -20,6 +20,7 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
   app.import('vendor/primeui/primeui-all.min.js')
+  // app.import('vendor/primeui/refresh-jquery.js')
   app.import('vendor/primeui/primeui-all.min.css')
 
   return app.toTree();
